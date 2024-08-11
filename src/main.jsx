@@ -1,5 +1,12 @@
+import React from "react";
+import { Router } from "./utils/router";
 import { createRoot } from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 
 const root = createRoot(document.getElementById("root"));
 
-root.render(<h1>It's Working!!</h1>);
+root.render(
+  <BrowserRouter>
+    <Router />
+  </BrowserRouter>
+);
